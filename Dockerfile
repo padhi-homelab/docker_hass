@@ -1,6 +1,6 @@
-FROM homeassistant/home-assistant:2022.2.1
+FROM homeassistant/home-assistant:2022.2.3
 
-ARG HACS_VERSION=1.21.0
+ARG HACS_VERSION=1.22.0
 
 COPY run.sh /etc/services.d/home-assistant/run
 
