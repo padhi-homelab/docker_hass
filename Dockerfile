@@ -1,6 +1,6 @@
-FROM homeassistant/home-assistant:2022.7.3
+FROM homeassistant/home-assistant:2022.8.3
 
-ARG HACS_VERSION=1.26.0
+ARG HACS_VERSION=1.26.2
 
 COPY run.sh /etc/services.d/home-assistant/run
 
@@ -20,5 +20,5 @@ RUN apk add --update --no-cache \
 EXPOSE 8123
 VOLUME ["/config"]
 
-HEALTHCHECK --interval=20s --timeout=3s --start-period=5s --retries=3 \
-        CMD [ "wget", "-qSO", "/dev/null", "http://localhost:8123" ]
+HEALTHCHECK --interval=15s --timeout=3s --start-period=5s \
+        CMD [ "wget", "-qSO", "/dev/null", "http://127.0.0.1:8123" ]
