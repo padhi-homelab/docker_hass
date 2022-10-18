@@ -1,6 +1,6 @@
-FROM homeassistant/home-assistant:2022.10.3
+FROM homeassistant/home-assistant:2022.10.4
 
-ARG HACS_VERSION=1.28.0
+ARG HACS_VERSION=1.28.2
 
 COPY run.sh /etc/services.d/home-assistant/run
 
@@ -18,7 +18,7 @@ RUN apk add --update --no-cache \
  && rm /tmp/hacs.zip
 
 EXPOSE 8123
-VOLUME ["/config"]
+VOLUME ["/config","/media"]
 
 HEALTHCHECK --interval=15s --timeout=3s --start-period=5s \
         CMD [ "wget", "-qSO", "/dev/null", "http://127.0.0.1:8123" ]

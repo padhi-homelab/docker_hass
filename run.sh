@@ -120,6 +120,7 @@ chown -R $USER:$GROUP "$CONFIG_PATH"
 # Enable Jemalloc for Home Assistant Core, unless disabled
 if [[ -z "${DISABLE_JEMALLOC+x}" ]]; then
   export LD_PRELOAD="/usr/local/lib/libjemalloc.so.2"
+  export MALLOC_CONF="background_thread:true,metadata_thp:auto,dirty_decay_ms:20000,muzzy_decay_ms:20000"
 fi
 
 bashio::log.info "Starting homeassistant"
