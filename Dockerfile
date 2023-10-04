@@ -1,6 +1,6 @@
-FROM homeassistant/home-assistant:2023.7.3
+FROM homeassistant/home-assistant:2023.9.3
 
-ARG HACS_VERSION=1.32.1
+ARG HACS_VERSION=1.33.0
 
 COPY run.sh /etc/services.d/home-assistant/run
 
