@@ -11,9 +11,9 @@
 
 A **non-root** multiarch [HomeAssistant] Docker image with [HACS].
 
-|        386         |       amd64        |       arm/v6       |       arm/v7       |       arm64        |         ppc64le          |          s390x           |
-| :----------------: | :----------------: | :----------------: | :----------------: | :----------------: | :----------------------: | :----------------------: |
-| :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_multiplication_x: | :heavy_multiplication_x: |
+|        386         |       amd64        |       arm/v6       |       arm/v7       |       arm64        |         ppc64le          |         riscv64          |          s390x           |
+| :----------------: | :----------------: | :----------------: | :----------------: | :----------------: | :----------------------: | :----------------------: | :----------------------: |
+| :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_multiplication_x: | :heavy_multiplication_x: | :heavy_multiplication_x: |
 
 ## Usage
 
