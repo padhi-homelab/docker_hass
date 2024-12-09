@@ -1,4 +1,4 @@
-FROM homeassistant/home-assistant:2024.11.1
+FROM homeassistant/home-assistant:2024.12.1
 
 ARG HACS_VERSION=2.0.1
 
