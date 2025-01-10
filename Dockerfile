@@ -1,4 +1,4 @@
-FROM homeassistant/home-assistant:2025.1.1
+FROM homeassistant/home-assistant:2025.1.2
 
 ARG HACS_VERSION=2.0.2
 ARG HACS_SHA_512=ca02c25166159bb660ab36dd4bdccecbca4a596fb154e51a101b1cdb643b6fc3600e727ae5d69ba3318eba73f6d4319b70a2bfcf0ebd3d2da2a0bb3ed80893a7
