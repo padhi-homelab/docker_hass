@@ -1,7 +1,7 @@
-FROM homeassistant/home-assistant:2025.1.2
+FROM homeassistant/home-assistant:2025.1.4
 
-ARG HACS_VERSION=2.0.3
-ARG HACS_SHA_512=d1fd7ce7b298d72f8f1d8809c9d7dac081610a01445c98b654696005f1ddec47dacc72f8b938b03c1187ad2b21bc6bb8a00538eb9b84f95ed8d234a0ce004ecd
+ARG HACS_VERSION=2.0.4
+ARG HACS_SHA_512=e2dcd96dc9ed666eee198880bcc6aba57514f0551f2a93105164771450680ccbbf7d5853712d789c402b8b8fd48b1b5cbea408c5ed32e14b2e004c229ca41265
 
 COPY run.sh /etc/services.d/home-assistant/run
 
