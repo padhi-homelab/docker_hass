@@ -118,8 +118,6 @@ export HOME
 #   https://github.com/home-assistant/core/blob/dev/rootfs/etc/services.d/home-assistant/run
 cd "$CONFIG_PATH" || bashio::exit.nok "Can't find config folder: $CONFIG_PATH"
 
-mkdir -p "$CONFIG_PATH/custom_components"
-cp -r /hacs "$CONFIG_PATH/custom_components/"
 chown -R $USER:$GROUP "$CONFIG_PATH"
 
 # Enable Jemalloc for Home Assistant Core, unless disabled
