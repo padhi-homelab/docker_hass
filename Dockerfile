@@ -1,4 +1,4 @@
-FROM homeassistant/home-assistant:2026.11.0
+FROM homeassistant/home-assistant:2026.11.2
 
 COPY run.sh /etc/services.d/home-assistant/run
 
